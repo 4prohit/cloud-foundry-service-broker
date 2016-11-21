@@ -1,0 +1,10 @@
+---
+applications:
+- name: hashmap-service-client
+  memory: 512M
+  instances: 1
+  path: target/hashmap-service-client-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack
+  random-route: true
+  services:
+   - custom-hashmap-service
