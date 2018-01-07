@@ -1,19 +1,19 @@
 # cf-service-broker
-Demo to learn Cloud Foundry Service Broker and Service Client to consume published services
+Project to understand Cloud Foundry Service Broker
 
 Service Broker for Hashmap as a Service
 
 Repository contains two projects:
 	
 	1.	hashmap-service-broker - Service broker to publish HashMap as a Service
-	2.	hashmap-service-client – Client to consume HashMap as a Service
+	2.	hashmap-service-client â€“ Client to consume HashMap as a Service
 
 Technologies used:
 Java -1.8, Spring Boot - 1.4.2.RELEASE, Spring Cloud, Cloud Foundry Service Broker, Spring Security, JPA, HSQLDB, REST Template, Maven, Junit, Mockito
 
 Deployment Instructions:
 1.	Build hashmap-service-broker and hashmap-service-client using Maven.
-2.	Push hashmap-service-broker to PCF using “cf push" command. (manifest.yml file is present in root directory with necessary parameters)
+2.	Push hashmap-service-broker to PCF using â€œcf push" command. (manifest.yml file is present in root directory with necessary parameters)
 3.	Register the service broker using below command:
 
 	cf create-service-broker SERVICE_BROKER USERNAME PASSWORD URL [--space-scoped]
@@ -47,7 +47,7 @@ Deployment Instructions:
 	Example:
 	cf service custom-hashmap-service
 
-7.	Push hashmap-service-client to PCF using “cf push" command. (manifest.yml file is present in root directory with necessary parameters)
+7.	Push hashmap-service-client to PCF using â€œcf push" command. (manifest.yml file is present in root directory with necessary parameters)
 	
 List o REST APIs to test the services from REST Client (Postman:
 
@@ -73,7 +73,7 @@ List o REST APIs to test the services from REST Client (Postman:
 	Example:
 	
 	PUT -> http://hashmap-service-client-plummy-assimilator.cfapps.io/hashmap/name
-	Request Body – Rohit Patil
+	Request Body â€“ Rohit Patil
 
 4.	To get value for given key from bound hashmap service instance
 
